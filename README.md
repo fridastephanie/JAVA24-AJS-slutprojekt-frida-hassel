@@ -21,13 +21,6 @@ As a bonus, it provides an efficient and interactive tool for team collaboration
 - Ability to delete entire Scrumboards
 - Error handling via modal with clear messages
 
-## 🔧 Technologies
-- React v19.1.0
-- React Router DOM v6.10.0
-- Firebase v11.7.3 (Realtime Database + Authentication)
-- Parcel bundler
-- React Firebase Hooks v5.1.1
-
 ## 🚀 Getting Started
 ### 1. Clone the project
 Run this in your terminal:
@@ -52,6 +45,13 @@ Parcel will launch the app in your browser automatically.
 - Parcel as bundler
 - Modular code structure (with separated hooks, components, and context)
 - Custom error handling with global modal
+
+## 🔧 Versions
+- React v19.1.0
+- React Router DOM v6.10.0
+- Firebase v11.7.3 (Realtime Database + Authentication)
+- Parcel bundler v2.14.4
+- React Firebase Hooks v5.1.1
 
 ## 🔐 Notes
 - Requires a Firebase project configuration (firebaseConfig)
