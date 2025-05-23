@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { useDocumentTitle } from "../pages/hooks/useDocumentTitle";
 import { Header } from '../components/Header';
 import { Modal } from '../components/Modal';
 import { RegisterForm } from '../features/start/components/RegisterForm';  
 import { LoginForm } from '../features/start/components/LoginForm';
 
 export function Start() {
+  useDocumentTitle();
   const [showRegisterModal, setShowRegisterModal] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false); 
   const scrumboardExample = new URL('../assets/scrumboard-example.jpg', import.meta.url).href;

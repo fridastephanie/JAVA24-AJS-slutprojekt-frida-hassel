@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useDocumentTitle } from "../pages/hooks/useDocumentTitle";
 import { useParams, useNavigate } from "react-router-dom";
 import { useCreateTask } from "../features/scrumboard/task/hooks/useCreateTask.js";
 import { Header } from "../components/Header.jsx";
@@ -13,6 +14,7 @@ import { useFilteredTasks } from "../features/scrumboard/task/hooks/useFilteredT
 import { useAuth } from "../context/AuthContext.jsx";
 
 export function Scrumboard() {
+  useDocumentTitle();
   const { id: scrumboardId } = useParams();
   const { currentUser } = useAuth();
   const navigate = useNavigate();

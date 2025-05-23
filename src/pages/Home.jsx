@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useDocumentTitle } from "../pages/hooks/useDocumentTitle";
 import { Header } from "../components/Header.jsx";
 import { Modal } from "../components/Modal.jsx";
 import { NewScrumboardForm } from "../features/home/components/NewScrumboardForm.jsx";
@@ -8,6 +9,7 @@ import { useScrumboardStats } from "../features/home/hooks/useScrumboardStats";
 import { ScrumboardStats } from "../features/home/components/ScrumboardStats";
 
 export function Home() {
+  useDocumentTitle();
   const [modalVisible, setModalVisible] = useState(false);
   const [modalContent, setModalContent] = useState(null);  
   const { currentUser } = useAuth();
